@@ -1,0 +1,227 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #c3cfe2;
+  margin: 0;
+}
+body h1 {
+  margin: 2rem;
+  color: #686de0;
+}
+
+/* SCSS - opdracht 1 */
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  align-items: center;
+  margin: 2rem;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 2px 6px 6px 0px #7F827B;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2rem;
+}
+.testimonial .omschrijving {
+  padding: 40px 40px 0px 40px;
+  font-size: larger;
+}
+.testimonial img {
+  width: 150px;
+  outline: #fff solid 5px;
+  border-radius: 50%;
+  transform: translate(0px, 60px);
+}
+
+.footer {
+  justify-content: center;
+  width: 400px;
+  padding: 80px 0 30px 0;
+  border-radius: 0 0 20px 20px;
+  background-color: #686de0;
+  text-align: center;
+}
+.footer h2 {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 100;
+}
+.footer p {
+  color: #9393d1;
+}
+
+/* SCSS - opdracht 2  */
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.portfolio img {
+  border-radius: 20px;
+  box-shadow: 2px 6px 6px 0px #7F827B;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  position: relative;
+}
+
+.card:hover {
+  opacity: 1;
+  background-color: #4b4848;
+  border-radius: 20px;
+  box-shadow: 2px 6px 6px 0px #7F827B;
+}
+
+.card:hover img {
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.card:hover button {
+  opacity: 1;
+}
+
+button {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .portfolio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .portfolio {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* SCSS - opdracht 3  */
+.social_media {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.icon {
+  display: block;
+  text-rendering: auto;
+  color: #fff;
+  margin: 20px;
+}
+
+.social_container > * {
+  color: #fff;
+  padding: 10px;
+}
+
+.social_media_blog {
+  position: relative;
+  text-align: left;
+  width: 280px;
+  transform: translateX(220px);
+  transition: 1s ease;
+  background-color: #e17b77;
+}
+.social_media_blog .laptop-code::before {
+  content: "\f5fc";
+  font: var(--fa-font-solid);
+  padding-right: 20px;
+}
+
+.social_media_blog:hover {
+  transform: translateX(0px);
+  transition: 1s ease;
+}
+
+.social_media_twitter {
+  position: relative;
+  text-align: left;
+  width: 280px;
+  transform: translateX(220px);
+  transition: 1s ease;
+  background-color: #00aced;
+}
+.social_media_twitter .twitter::before {
+  content: "\f099";
+  font: var(--fa-font-brands);
+  padding-right: 20px;
+}
+
+.social_media_twitter:hover {
+  transform: translateX(0px);
+  transition: 1s ease;
+}
+
+.social_media_linkedin {
+  position: relative;
+  text-align: left;
+  width: 280px;
+  transform: translateX(220px);
+  transition: 1s ease;
+  background-color: #007bb6;
+}
+.social_media_linkedin .linkedin::before {
+  content: "\f0e1";
+  font: var(--fa-font-brands);
+  padding-right: 20px;
+}
+
+.social_media_linkedin:hover {
+  transform: translateX(0px);
+  transition: 1s ease;
+}
+
+.social_media_facebook {
+  position: relative;
+  text-align: left;
+  width: 280px;
+  transform: translateX(220px);
+  transition: 1s ease;
+  background-color: #3b5998;
+}
+.social_media_facebook .facebook::before {
+  content: "\f39e";
+  font: var(--fa-font-brands);
+  padding-right: 20px;
+}
+
+.social_media_facebook:hover {
+  transform: translateX(0px);
+  transition: 1s ease;
+}
+
+.social_media_github {
+  position: relative;
+  text-align: left;
+  width: 280px;
+  transform: translateX(220px);
+  transition: 1s ease;
+  background-color: #333;
+}
+.social_media_github .github::before {
+  content: "\f09b";
+  font: var(--fa-font-brands);
+  padding-right: 20px;
+}
+
+.social_media_github:hover {
+  transform: translateX(0px);
+  transition: 1s ease;
+}/*# sourceMappingURL=styles.css.map */
